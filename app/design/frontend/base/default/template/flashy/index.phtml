@@ -1,0 +1,7 @@
+<?php if( $this->getFlashyId() && !(Mage::getStoreConfig('flashy/flashy/purchase'))) : ?>
+	<script type="text/javascript">
+		//<![CDATA[
+			flashy('Purchase', <?php echo json_encode($this->getOrderDetails()); ?>);
+		//]]>
+	</script>
+<?php endif; ?>

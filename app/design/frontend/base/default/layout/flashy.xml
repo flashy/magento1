@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout>
+	<checkout_onepage_success translate="label">
+        <reference name="content">
+        	<block type="flashy/index" name="flashy_index" template="flashy/index.phtml"/>
+        </reference>
+    </checkout_onepage_success>
+    <catalog_product_view>
+        <reference name="head">
+            <block type="flashy/product" name="flashy_product" template="flashy/product.phtml"/>
+            <remove name="flashy_tracking"/>
+        </reference>
+    </catalog_product_view>
+    <default>
+        <reference name="head">
+            <block type="core/template" name="flashy_tracking" template="flashy/tracking.phtml"/>
+        </reference>
+    </default>
+</layout>

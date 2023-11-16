@@ -1,0 +1,38 @@
+<?php $flashy_helper = Mage::helper("flashy"); ?>
+
+<?php if( $this->getFlashyId() ) : ?>
+    <script type="text/javascript">
+        //<![CDATA[
+        
+        <?php $flashy_helper::getPixel($flashy_helper->getFlashyId()); ?>
+
+        flashy('ViewContent', <?php echo json_encode($this->getProductDetails()); ?>);
+        
+        <?php $flashy_id = Mage::getSingleton('core/cookie')->get('flashy_id');
+        if( Mage::getSingleton('customer/session')->isLoggedIn() && !$flashy_id ) {
+            $customer = Mage::getSingleton('customer/session')->getCustomer();
+            ?>
+            flashy('setCustomer', {
+                "email": "<?php echo base64_encode($customer->getEmail()); ?>"
+            });
+        <?php } ?>
+        //]]>
+    </script>
+
+    <?php
+    $flashy_cart = $flashy_helper->getCart();
+    if( $flashy_cart ) :
+        ?>
+        <script type="text/javascript">
+			//<![CDATA[
+            <?php
+            $cart_cache = Mage::getSingleton('core/cookie')->get('flashy_cart_cache');
+            if( base64_encode($flashy_cart) != $cart_cache ) : ?>
+			flashy('UpdateCart', <?php echo $flashy_cart; ?>);
+            <?php
+            Mage::getSingleton('core/cookie')->set('flashy_cart_cache', base64_encode($flashy_cart), 86400, '/');
+            endif; ?>
+			//]]>
+        </script>
+    <?php endif; ?>
+<?php endif; ?>

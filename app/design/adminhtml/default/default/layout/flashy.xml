@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout>
+	<adminhtml_system_config_edit>
+		<reference name="head">
+			<action method="addCss"><stylesheet>flashy/integration/flashy.css</stylesheet></action>
+		</reference>
+	</adminhtml_system_config_edit>
+	
+    <adminhtml_fexport_index>
+        <update handle="editor"/>
+        <remove name="content-header"/>
+        <reference name="content">
+            <block type="flashy/adminhtml_form_edit" name="adminform"/>
+        </reference>
+        <reference name="left">
+            <block type="flashy/adminhtml_form_edit_tabs" name="adminform_tabs"/>
+        </reference>
+    </adminhtml_fexport_index>
+</layout>

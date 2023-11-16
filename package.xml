@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+    <name>Flashy_Integration</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Flashy's extension adds tracking events (add to cart, purchase) It also allows you to sync products and order statuses.</summary>
+    <description>Flashy learns your customers and deliver to each one of them the right message at the right time via Popups, Email, SMS and Push Notifications.&#xD;
+&#xD;
+With this integration you will be able to:&#xD;
+* Track every action your visitors and customers make&#xD;
+* Show behavioral popups (up-sell, cross-sell, collect leads)&#xD;
+* Send triggers emails and text messages&#xD;
+* Sync your products with Flashy for dynamic email templates&#xD;
+&#xD;
+Use-cases:&#xD;
+* Show popup for when they about to leave the website (Exit-Intent)&#xD;
+* Automation for cart abandonment&#xD;
+&#xD;
+Support:&#xD;
+hello@flashyapp.com</description>
+    <notes>Flashy Marketing Automation</notes>
+    <authors><author><name>Rafael Mor</name><user>rafael_mor</user><email>hello@flashyapp.com</email></author></authors>
+    <date>2020-11-26</date>
+    <time>16:21:17</time>
+    <contents><target name="magecommunity"><dir name="Flashy"><dir name="Integration"><dir name="Block"><dir name="Adminhtml"><dir name="Form"><dir name="Edit"><file name="Form.php" hash="b3783b696487ba9186616af224846b70"/><dir name="Renderer"><file name="Label.php" hash="107fd48708fadff025434007f22068ef"/><file name="Multienabled.php" hash="1dca7f62190ca1c18b13ac1e22367b1d"/></dir><dir name="Tab"><file name="General.php" hash="30c779727e2d053093b369e5504d67a5"/><file name="Lists.php" hash="190034057ba011f95a93ae3eaa4926fc"/></dir><file name="Tabs.php" hash="6193b2a18bc7771d3577b2d263031ef2"/></dir><file name="Edit.php" hash="4797b4071ce0a623ac00368820e11585"/></dir><dir name="System"><dir name="Config"><file name="Connected.php" hash="390da7c122e595bf527c4ab1adc19d8f"/><file name="Url.php" hash="0548c79fdd6754c800190c345c7d43a3"/></dir></dir></dir><file name="Index.php" hash="1e51a8785747a0eec23b99e1dff0e307"/><file name="Product.php" hash="5e6da82239de1f6cfb935199cbbd204e"/></dir><dir name="Helper"><file name="Data.php" hash="aab4519fd6d7e7a6206c68959a4e1017"/></dir><dir name="Model"><file name="Carthash.php" hash="6f8f97ecb4381531f5b7378219e5788f"/><file name="List.php" hash="44f2d959e3eb40283416b317391ac1a3"/><file name="Observer.php" hash="25c504930defe8715c65bd869fdf4558"/><dir name="Resource"><dir name="Carthash"><file name="Collection.php" hash="49cbf7fe178e550281782d4497ed5286"/></dir><file name="Carthash.php" hash="c29b14a131516a455db9690b505bfb9b"/></dir><dir name="System"><dir name="Config"><dir name="Backend"><file name="Key.php" hash="3f3ec680066a1bcd892b3732ab08be90"/></dir></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="FexportController.php" hash="99c3979c4c705c4addc477ffccca4976"/></dir><file name="IndexController.php" hash="e258463dca60382850d08ed1cab6fe4c"/><file name="RestoreController.php" hash="d7d06af31d433ebe1389320625a3534a"/></dir><dir name="etc"><file name="adminhtml.xml" hash="f8f3600fa32983d6fc3b9c0cb94950d2"/><file name="config.xml" hash="fd0f4c441265623b1582517d94963fd7"/><file name="system.xml" hash="02f20b265e906e125e97c8d820036267"/></dir><dir name="sql"><dir name="flashy_setup"><file name="install-1.0.0.php" hash="4b065f511ed8b0dabf3f6ac05eff428a"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Flashy_Integration.xml" hash="54b28a7995ffc8e6c177d3b9fc10357e"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="flashy.xml" hash="98dbb8959ab457e7089cb268a4bd9da2"/></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="flashy.xml" hash="14ae794b7bcc0a6a74bac7241a1a66eb"/></dir><dir name="template"><dir name="flashy"><file name="index.phtml" hash="c33d2ef158f4fa02f29afa60fad938d5"/><file name="product.phtml" hash="03cc56f4369e5ba4117be82d1783fceb"/><file name="tracking.phtml" hash="dc3aa8c39a1785f4060c9a54df5e1689"/></dir></dir></dir></dir></dir></target><target name="magelib"><dir name="Flashy"><dir name="Flashy"><file name="Account.php" hash="c33cc0e5fa7606d76b091560f2b30301"/><file name="Catalogs.php" hash="6d0a20a0def676a56eec8bbd562c66fe"/><file name="Contacts.php" hash="9e4d1dbba764f270c1f6900ad7d5934c"/><file name="Events.php" hash="d3ef073b9fa287e0d0f14213c397f61c"/><file name="Exceptions.php" hash="84a583c38364e59fb58044d822bb9323"/><file name="Import.php" hash="afffa5718bb427c85ea0f2d73613659c"/><file name="Lists.php" hash="962b929afad66bc138c6f5eeff1f14d8"/><file name="Sms.php" hash="04c2000ef26e1b79f800a650b24e456e"/><file name="Thunder.php" hash="064aed74983adf81a1fbdfdf12d7c50e"/></dir><file name="Flashy.php" hash="4ab6f16bedb6a64dfa33c3a97b4b5fb0"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="flashy"><dir name="integration"><file name="flashy-icon.png" hash="fadfcdd547ea1699f39dd1cc5d9c5836"/><file name="flashy.css" hash="73b878d786581cba4ed6a5b0a88ef054"/></dir></dir></dir></dir></dir></target><target name="mage"><dir name="var"><dir name="log"><file name="flashy.log" hash="d41d8cd98f00b204e9800998ecf8427e"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>7.2.0</max></php></required></dependencies>
+</package>

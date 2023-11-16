@@ -1,0 +1,10 @@
+ul.tabs a.flashy {
+	border-bottom:1px dotted;
+}
+ul.tabs a.flashy span,
+ul.tabs a.flashy:hover span {
+	background-image:url(flashy-icon.png) !important;
+	background-repeat:no-repeat;
+	background-position:18px center;
+	padding-left:40px;
+}
